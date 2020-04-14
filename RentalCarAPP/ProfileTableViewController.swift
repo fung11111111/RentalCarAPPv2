@@ -18,14 +18,13 @@ class ProfileTableViewController: UITableViewController{
         super.viewDidLoad()
         self.tableView.contentInsetAdjustmentBehavior = .never
         
-      
         
-       
+        
+        
     }
     
     
-    
-    @IBAction func logoutTapped(_ sender: Any) {
+    func logout(){
         do {
             try Auth.auth().signOut()
             print ("signout")
@@ -36,6 +35,10 @@ class ProfileTableViewController: UITableViewController{
         } catch let err {
             print(err)
         }
+    }
+    @IBAction func logoutTapped(_ sender: Any) {
+        logoutAlert()
+        
     }
     func sendEmail(){
         guard MFMailComposeViewController.canSendMail() else{
@@ -66,7 +69,7 @@ class ProfileTableViewController: UITableViewController{
                 }
                 
             }
-     
+            
             headerView.addShadow()
             
             
@@ -93,12 +96,12 @@ class ProfileTableViewController: UITableViewController{
                 self.navigationController?.pushViewController(vc!, animated: true)
             }else if indexPath.row == 2{
                 let popup : PopupChangePwViewController = self.storyboard?.instantiateViewController(withIdentifier: "PopupChangePwViewController") as! PopupChangePwViewController
-       
+                
                 self.navigationController!.modalPresentationStyle = UIModalPresentationStyle.formSheet
                 self.navigationController!.setNavigationBarHidden(true, animated: true)
                 
                 self.present(popup, animated: true, completion: nil)
-               
+                
             }
         }else if indexPath.section == 2{
             if indexPath.row == 0{
@@ -109,7 +112,7 @@ class ProfileTableViewController: UITableViewController{
                 }else{
                     print("can nav to next vc")
                     let vc = storyboard?.instantiateViewController(identifier: "MyRentingCarViewController") as! MyRentingCarViewController
-                
+                    
                     present(vc, animated: true, completion: nil)
                 }
             }else if indexPath.row == 1{
@@ -119,7 +122,7 @@ class ProfileTableViewController: UITableViewController{
                 }else{
                     print("can nav to next vc")
                     let vc = storyboard?.instantiateViewController(identifier: "MyListingCarViewController") as! MyListingCarViewController
-                   
+                    
                     present(vc, animated: true, completion: nil)
                 }
             }
@@ -130,12 +133,21 @@ class ProfileTableViewController: UITableViewController{
         }
         
     }
-   
-  
+    
+    
     func displayDefaultAlert(title: String?, message: String?) {
         let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
+        self.present(alert, animated: true, completion: nil)
+    }
+    func logoutAlert() {
+        let alert = UIAlertController(title: "Log out of \(personalInfo?.firstName ?? "this account")?", message: "", preferredStyle: .alert)
+        let logoutAction = UIAlertAction(title: "Log Out", style: .default, handler: {action in self.logout()})
+        alert.addAction(logoutAction)
+        let cancelAction = UIAlertAction(title: "Cancel", style: .cancel)
+        alert.addAction(cancelAction)
+        
         self.present(alert, animated: true, completion: nil)
     }
     

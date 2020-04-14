@@ -2064,7 +2064,8 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ndI-T6-ufQ">
-                                                    <rect key="frame" x="16" y="7.0000000000000018" width="382" height="30.666666666666671"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                                     <state key="normal" title="Log out"/>
                                                     <connections>
                                                         <action selector="logoutTapped:" destination="UjD-80-dkW" eventType="touchUpInside" id="7da-OH-UsG"/>
@@ -2072,10 +2073,10 @@
                                                 </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="bottom" secondItem="ndI-T6-ufQ" secondAttribute="bottom" constant="6.5" id="G4S-gr-tJw"/>
-                                                <constraint firstItem="ndI-T6-ufQ" firstAttribute="leading" secondItem="EQb-8c-VCp" secondAttribute="leading" constant="16" id="Qu8-kX-ylb"/>
-                                                <constraint firstItem="ndI-T6-ufQ" firstAttribute="top" secondItem="EQb-8c-VCp" secondAttribute="top" constant="7" id="b7T-yb-rxr"/>
-                                                <constraint firstAttribute="trailing" secondItem="ndI-T6-ufQ" secondAttribute="trailing" constant="16" id="wZo-EB-Qju"/>
+                                                <constraint firstAttribute="bottom" secondItem="ndI-T6-ufQ" secondAttribute="bottom" id="G4S-gr-tJw"/>
+                                                <constraint firstItem="ndI-T6-ufQ" firstAttribute="leading" secondItem="EQb-8c-VCp" secondAttribute="leading" id="Qu8-kX-ylb"/>
+                                                <constraint firstItem="ndI-T6-ufQ" firstAttribute="top" secondItem="EQb-8c-VCp" secondAttribute="top" id="b7T-yb-rxr"/>
+                                                <constraint firstAttribute="trailing" secondItem="ndI-T6-ufQ" secondAttribute="trailing" id="wZo-EB-Qju"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
