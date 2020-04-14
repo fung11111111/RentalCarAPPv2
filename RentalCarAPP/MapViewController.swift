@@ -77,9 +77,6 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate {
         print(self.dataArray.count)
         for data in self.dataArray{
             let carAnnotation = customAnnotation(data: data)
-            //  carAnnotation.title = data.car.brand + " " + data.car.model
-            //  carAnnotation.subtitle = data.address.streetname
-            //  carAnnotation.coordinate = CLLocationCoordinate2D(latitude: data.address.lat, longitude: data.address.lng)
             self.mapView.addAnnotation(carAnnotation)
         }
         
@@ -150,8 +147,6 @@ class MapViewController: UIViewController, UIGestureRecognizerDelegate {
         // draw direction btn
         directionBtn.setCircle()
         
-        // show nav bar
-        //    self.navigationController?.setNavigationBarHidden(false, animated: false)
         
         self.navBar.isHidden = true
         

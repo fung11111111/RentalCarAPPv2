@@ -97,9 +97,12 @@ class SingleItemViewController: UITableViewController,signleItemDateDelegate{
         view.addGestureRecognizer(tapGesture)
     }
     @IBAction func calendarTapped(_ sender: Any) {
+        
         let vc = storyboard?.instantiateViewController(identifier: "PopupDateViewController") as! PopupDateViewController
         vc.signleItemDateDelegate = self
         present(vc, animated: true, completion: nil)
+        
+        
         
     }
     

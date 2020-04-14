@@ -23,7 +23,6 @@
 		03671CBB23EC21CC002630E9 /* FireDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03671CBA23EC21CC002630E9 /* FireDataLoader.swift */; };
 		036C94332444A4AB00CB8A25 /* PopupChangePwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036C94322444A4AB00CB8A25 /* PopupChangePwViewController.swift */; };
 		036FA83823D02EC60097F34A /* LogoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 036FA83723D02EC60097F34A /* LogoViewController.swift */; };
-		038C859A23EDB9B0003334E0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038C859923EDB9B0003334E0 /* ProfileViewController.swift */; };
 		038F4C302440B77700542D54 /* customNavItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F4C2F2440B77700542D54 /* customNavItem.swift */; };
 		038F4C322442FAAA00542D54 /* userdata.json in Resources */ = {isa = PBXBuildFile; fileRef = 038F4C312442FAAA00542D54 /* userdata.json */; };
 		038F4C34244300F900542D54 /* MyRentingCarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 038F4C33244300F900542D54 /* MyRentingCarViewController.swift */; };
@@ -70,7 +69,6 @@
 		03671CBA23EC21CC002630E9 /* FireDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireDataLoader.swift; sourceTree = "<group>"; };
 		036C94322444A4AB00CB8A25 /* PopupChangePwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupChangePwViewController.swift; sourceTree = "<group>"; };
 		036FA83723D02EC60097F34A /* LogoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogoViewController.swift; sourceTree = "<group>"; };
-		038C859923EDB9B0003334E0 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ProfileViewController.swift; path = "Custom Style/ProfileViewController.swift"; sourceTree = "<group>"; };
 		038F4C2F2440B77700542D54 /* customNavItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavItem.swift; sourceTree = "<group>"; };
 		038F4C312442FAAA00542D54 /* userdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = userdata.json; sourceTree = "<group>"; };
 		038F4C33244300F900542D54 /* MyRentingCarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyRentingCarViewController.swift; sourceTree = "<group>"; };
@@ -153,7 +151,6 @@
 				039110AE23EB05E900E5C9D6 /* Model */,
 				03F6E24F23CC2750007A6E3F /* Custom Style */,
 				03F6E23B23CC2434007A6E3F /* AppDelegate.swift */,
-				038C859923EDB9B0003334E0 /* ProfileViewController.swift */,
 				03F6E23D23CC2434007A6E3F /* SceneDelegate.swift */,
 				03F6E23F23CC2434007A6E3F /* LoginViewController.swift */,
 				0359538023CF0FFB0021DE46 /* SignupViewController.swift */,
@@ -374,7 +371,6 @@
 				039110B223EB070A00E5C9D6 /* datamodel.swift in Sources */,
 				03E4A09023D08B6F002DBB54 /* MapViewController.swift in Sources */,
 				03671CBB23EC21CC002630E9 /* FireDataLoader.swift in Sources */,
-				038C859A23EDB9B0003334E0 /* ProfileViewController.swift in Sources */,
 				03F6E23C23CC2434007A6E3F /* AppDelegate.swift in Sources */,
 				034BE25923F3BB3700522838 /* PopupDateViewController.swift in Sources */,
 				034BE25523F19B3A00522838 /* SingleItemViewController.swift in Sources */,
@@ -539,7 +535,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NH3JKRAZQ;
 				INFOPLIST_FILE = RentalCarAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,7 +555,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NH3JKRAZQ;
 				INFOPLIST_FILE = RentalCarAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

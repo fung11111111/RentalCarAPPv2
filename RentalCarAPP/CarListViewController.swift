@@ -264,12 +264,10 @@ class CarListViewController: UIViewController,UICollectionViewDataSource,UIColle
         
         if turnOn{
             activityIndicator.startAnimating()
-            //  UIApplication.shared.beginIgnoringInteractionEvents()
             view.isUserInteractionEnabled = false
         }else{
             
             activityIndicator.stopAnimating()
-            //  UIApplication.shared.endIgnoringInteractionEvents()
             view.isUserInteractionEnabled = true
         }
     }
@@ -278,11 +276,5 @@ class CarListViewController: UIViewController,UICollectionViewDataSource,UIColle
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
     }
-    //    func waitForData(after microseconds: Int, completion: @escaping() -> Void){
-    //        let deadline = DispatchTime.now() + .microseconds(microseconds)
-    //        DispatchQueue.main.asyncAfter(deadline: deadline){
-    //            completion()
-    //        }
-    //    }
-    //
+  
 }

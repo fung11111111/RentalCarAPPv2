@@ -24,7 +24,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         configTapGesture()
-        // Do any additional setup after loading the view.
+        
         signUpBtn.setBtnStyle()
     }
     

@@ -34,7 +34,7 @@ class PopupDateViewController: UIViewController {
         
         calendarConfig()
         selectBtn.setBtnStyle()
-      //  customButton()
+      
         
     }
     
@@ -154,7 +154,7 @@ extension PopupDateViewController: FSCalendarDelegate, FSCalendarDataSource{
             print("the rang is \(selectedRange!)")
             startDayLbl?.text = ""
             endDayLbl?.text = ""
-            //  selectBtn.titleLabel?.text = "Select"
+            
         }
         
         
@@ -170,7 +170,7 @@ extension PopupDateViewController: FSCalendarDelegate, FSCalendarDataSource{
             endDayLbl?.text = ""
             
             print("the rang is \(selectedRange!)")
-            //  selectBtn.titleLabel?.text = "Select"
+           
         }else if (firstDay != nil && lastDay != nil){
             for d in calendar.selectedDates{
                 calendar.deselect(d)
@@ -183,7 +183,7 @@ extension PopupDateViewController: FSCalendarDelegate, FSCalendarDataSource{
             endDayLbl?.text = ""
             
             print("the rang is \(selectedRange!)")
-            //  selectBtn.titleLabel?.text = "Select"
+            
         }
         
     }

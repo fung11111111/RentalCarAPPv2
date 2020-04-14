@@ -106,17 +106,6 @@ class PersonalInfoTableViewController: UITableViewController, UINavigationContro
         pickerView.setValue(UIColor(displayP3Red: 60.0/255.0, green: 128.0/255.0, blue: 247.0/255.0, alpha: 1.0), forKeyPath: "textColor")
         
         
-        
-        
-        //        let tooBar = UIToolbar()
-        //        tooBar.backgroundColor = UIColor(displayP3Red: 255.0/255.0, green: 255.0/255.0, blue: 255.0/255.0, alpha: 0.3)
-        //        tooBar.sizeToFit()
-        //
-        //        let flexButton = UIBarButtonItem(barButtonSystemItem: .flexibleSpace, target: self, action: nil)
-        //        let doneButton = UIBarButtonItem(title: "Done", style: .plain, target: self, action: nil)
-        //        tooBar.setItems([flexButton, doneButton], animated: true)
-        //        genderField.inputAccessoryView = tooBar
-        
         countryCodePicker.setImage(UIImage(named: "icons8-sort-down-20"), for: .normal)
         countryCodePicker.imageEdgeInsets = UIEdgeInsets(top: 1, left: 0, bottom: 0, right: 1)
         

@@ -22,7 +22,9 @@ class ProfileTableViewController: UITableViewController{
         
         
     }
-    
+    func styleConfig(){
+        
+    }
     
     func logout(){
         do {
@@ -40,14 +42,15 @@ class ProfileTableViewController: UITableViewController{
         logoutAlert()
         
     }
-    func sendEmail(){
+    func sendEmail(title: String){
         guard MFMailComposeViewController.canSendMail() else{
+            displayDefaultAlert(title: "Not Available", message: "Your device does not have email service")
             return
         }
         let composer = MFMailComposeViewController()
         composer.mailComposeDelegate = self
         composer.setToRecipients(["rentalCarSupport@rent.com"])
-        composer.setSubject("Feedback about rental car")
+        composer.setSubject(title)
         present(composer,animated: true)
         
     }
@@ -94,6 +97,8 @@ class ProfileTableViewController: UITableViewController{
                 print("personal tapped")
                 //  present(vc!, animated: true, completion: nil)
                 self.navigationController?.pushViewController(vc!, animated: true)
+            }else if indexPath.row == 1{
+                displayDefaultAlert(title: "No Available", message: "The service has not been set up yet")
             }else if indexPath.row == 2{
                 let popup : PopupChangePwViewController = self.storyboard?.instantiateViewController(withIdentifier: "PopupChangePwViewController") as! PopupChangePwViewController
                 
@@ -105,7 +110,7 @@ class ProfileTableViewController: UITableViewController{
             }
         }else if indexPath.section == 2{
             if indexPath.row == 0{
-                print(personalInfo?.renting)
+
                 if personalInfo?.renting == 0{
                     print("You have not rented any item yet")
                     displayDefaultAlert(title: "No Renting Records", message: "You didn't rent any car!")
@@ -127,8 +132,10 @@ class ProfileTableViewController: UITableViewController{
                 }
             }
         }else if indexPath.section == 3{
-            if indexPath.row == 1{
-                sendEmail()
+            if indexPath.row == 0{
+                sendEmail(title: "Need help in using RentalAPP")
+            }else{
+                sendEmail(title: "Comments about RentalAPP")
             }
         }
         
@@ -173,6 +180,8 @@ extension ProfileTableViewController: MFMailComposeViewControllerDelegate{
             print("saved")
         case .sent:
             print("sent")
+        @unknown default:
+             print("unknowValue")
         }
         controller.dismiss(animated: true, completion: nil)
     }
