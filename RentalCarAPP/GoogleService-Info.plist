@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>550396262685-81ckbhqrqkf34nk34ha4soee3mr161pb.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.550396262685-81ckbhqrqkf34nk34ha4soee3mr161pb</string>
+	<key>API_KEY</key>
+	<string>AIzaSyDWynBwPu5GDM7sfVw2NGoXfCCbf6io5sI</string>
+	<key>GCM_SENDER_ID</key>
+	<string>550396262685</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>flam.RentalCarAPP</string>
+	<key>PROJECT_ID</key>
+	<string>rental-car-app-93873</string>
+	<key>STORAGE_BUCKET</key>
+	<string>rental-car-app-93873.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:550396262685:ios:28840ff3781a8a3ec209f4</string>
+	<key>DATABASE_URL</key>
+	<string>https://rental-car-app-93873.firebaseio.com</string>
+</dict>
+</plist>
