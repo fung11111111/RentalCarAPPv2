@@ -11,6 +11,7 @@ import UIKit
 class CarlistcellCollectionViewCell: UICollectionViewCell {
     
     
+  
     @IBOutlet weak var carImage: UIImageView!
     @IBOutlet weak var carName: UILabel!
     @IBOutlet weak var carModel: UILabel!

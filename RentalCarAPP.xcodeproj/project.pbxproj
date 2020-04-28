@@ -12,7 +12,6 @@
 		030B53F42417C53E0033BA69 /* MyListingCarCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030B53F32417C53E0033BA69 /* MyListingCarCollectionViewCell.swift */; };
 		030E581223F936BE0008A9CA /* customTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E581123F936BE0008A9CA /* customTableViewCell.swift */; };
 		030E581423FA20EA0008A9CA /* customNavBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 030E581323FA20EA0008A9CA /* customNavBar.swift */; };
-		0313C8D52434C85F00047925 /* conv_CatVsDog.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0313C8D42434C85F00047925 /* conv_CatVsDog.mlmodel */; };
 		0324EE92243C6B05006B810A /* SearchByImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0324EE91243C6B05006B810A /* SearchByImageViewController.swift */; };
 		0324EE94243C9925006B810A /* carpredictModel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 0324EE93243C9925006B810A /* carpredictModel.mlmodel */; };
 		034BE25523F19B3A00522838 /* SingleItemViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 034BE25423F19B3A00522838 /* SingleItemViewController.swift */; };
@@ -58,7 +57,6 @@
 		030B53F32417C53E0033BA69 /* MyListingCarCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyListingCarCollectionViewCell.swift; sourceTree = "<group>"; };
 		030E581123F936BE0008A9CA /* customTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customTableViewCell.swift; sourceTree = "<group>"; };
 		030E581323FA20EA0008A9CA /* customNavBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = customNavBar.swift; sourceTree = "<group>"; };
-		0313C8D42434C85F00047925 /* conv_CatVsDog.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = conv_CatVsDog.mlmodel; sourceTree = "<group>"; };
 		0324EE91243C6B05006B810A /* SearchByImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchByImageViewController.swift; sourceTree = "<group>"; };
 		0324EE93243C9925006B810A /* carpredictModel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = carpredictModel.mlmodel; sourceTree = "<group>"; };
 		034BE25423F19B3A00522838 /* SingleItemViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleItemViewController.swift; sourceTree = "<group>"; };
@@ -121,7 +119,6 @@
 				0324EE93243C9925006B810A /* carpredictModel.mlmodel */,
 				039110B923EB1D3500E5C9D6 /* DataLoader.swift */,
 				038F4C312442FAAA00542D54 /* userdata.json */,
-				0313C8D42434C85F00047925 /* conv_CatVsDog.mlmodel */,
 				03671CBA23EC21CC002630E9 /* FireDataLoader.swift */,
 			);
 			path = Model;
@@ -354,7 +351,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				030B53F42417C53E0033BA69 /* MyListingCarCollectionViewCell.swift in Sources */,
-				0313C8D52434C85F00047925 /* conv_CatVsDog.mlmodel in Sources */,
 				03F01FD323FBDED40072D6A6 /* UploadTableViewController.swift in Sources */,
 				039110BA23EB1D3500E5C9D6 /* DataLoader.swift in Sources */,
 				03F6E24023CC2434007A6E3F /* LoginViewController.swift in Sources */,
@@ -535,7 +531,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NH3JKRAZQ;
 				INFOPLIST_FILE = RentalCarAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -555,7 +551,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2NH3JKRAZQ;
 				INFOPLIST_FILE = RentalCarAPP/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

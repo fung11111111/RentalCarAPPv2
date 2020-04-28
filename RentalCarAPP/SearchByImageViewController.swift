@@ -134,14 +134,15 @@ class SearchByImageViewController: UIViewController, UINavigationControllerDeleg
         UIGraphicsEndImageContext()
         return image
     }
+    
     @objc func showActionSheet() {
         let sheet = UIAlertController(title: "Car model detection", message: "Pick a car image!", preferredStyle: .actionSheet)
-        let takePic = UIAlertAction(title: "Take Pickure", style: .default) { (action) in
+        let takePic = UIAlertAction(title: "Take Picture", style: .default) { (action) in
             print("take picture tapped")
             self.pickerController.sourceType = .camera
             self.present(self.pickerController,animated: true, completion: nil)
         }
-        let uploadPic = UIAlertAction(title: "Upload Pickure", style: .default) { (action) in
+        let uploadPic = UIAlertAction(title: "Upload Picture", style: .default) { (action) in
             print("upload picture tapped")
             self.pickerController.sourceType = .photoLibrary
             self.present(self.pickerController,animated: true, completion: nil)

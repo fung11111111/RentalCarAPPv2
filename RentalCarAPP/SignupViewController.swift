@@ -100,7 +100,7 @@ class SignupViewController: UIViewController, UITextFieldDelegate {
                                                      "countryCode": "country code",
                                                      "uid": uid!,
                                                      "listing": 0,
-                                                     "rentin": 0
+                                                     "renting": 0
                     ]
                     dbReference.child("userinfo").child(uid!).setValue(userInfodic)
                     self.errorLbl.alpha = 0

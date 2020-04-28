@@ -92,6 +92,7 @@ class CarListViewController: UIViewController,UICollectionViewDataSource,UIColle
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "carlistcell", for: indexPath) as! CarlistcellCollectionViewCell
         
         if isSearching{
+         
             cell.carImage?.sd_setImage(with: URL(string: searchingArr[indexPath.row].car.image_url), placeholderImage: nil, options: .handleCookies, completed: nil)
             cell.carName.text = searchingArr[indexPath.row].car.brand
             cell.carModel.text = searchingArr[indexPath.row].car.model
@@ -101,6 +102,7 @@ class CarListViewController: UIViewController,UICollectionViewDataSource,UIColle
             cell.transmission.text = searchingArr[indexPath.row].car.transmission
             cell.ratingLabel.text = "7.5"
         }else{
+            
             cell.carImage?.sd_setImage(with: URL(string: dataArray[indexPath.row].car.image_url), placeholderImage: nil, options: .handleCookies, completed: nil)
             cell.carName.text = dataArray[indexPath.row].car.brand
             cell.carModel.text = dataArray[indexPath.row].car.model
